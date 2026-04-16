@@ -1,6 +1,6 @@
-# Street Viewer 360 🌐
+# Hudoyorxon Saroyi 🌐
 
-360° panorama ko'ruvchi - Insta360 X5 rasmlarini interaktiv Street View rejimida ko'rsatish uchun zamonaviy React ilovasi.
+Hudoyorxon Saroyi - Insta360 X5 rasmlarini interaktiv 360° rejimida ko'rsatish uchun zamonaviy React ilovasi.
 
 ## ✨ Xususiyatlar
 
@@ -121,7 +121,7 @@ setInterval(() => {
 ## 📁 Fayl Strukturasi
 
 ```
-street-viewer-360/
+hudoyorxon-saroyi/
 ├── public/
 │   └── panoramas/          # 360° rasmlar shu yerda
 ├── src/
@@ -170,11 +170,11 @@ git init
 
 # O'zgarishlarni qo'shish
 git add .
-git commit -m "Initial commit: Street Viewer 360 app"
+git commit -m "Initial commit: Hudoyorxon Saroyi app"
 
 # GitHub'ga yuklash
 git branch -M main
-git remote add origin https://github.com/USERNAME/street-viewer-360.git
+git remote add origin https://github.com/USERNAME/hudoyorxon-saroyi.git
 git push -u origin main
 ```
 

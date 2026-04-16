@@ -56,7 +56,7 @@ const Sidebar = () => {
                         <line x1="19" y1="12" x2="22" y2="12" />
                     </svg>
                 </div>
-                <span className="sidebar-logo-text">Street Viewer</span>
+                <span className="sidebar-logo-text">Hudoyorxon Saroyi</span>
             </div>
 
             {/* Navigation */}
