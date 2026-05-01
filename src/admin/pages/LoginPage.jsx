@@ -57,7 +57,7 @@ const LoginPage = () => {
                             <line x1="19" y1="12" x2="22" y2="12" />
                         </svg>
                     </div>
-                    <h1 className="login-title">Hudoyorxon Saroyi</h1>
+                    <h1 className="login-title">Street Viewer</h1>
                     <p className="login-subtitle">Admin paneliga kirish</p>
                 </div>
 
@@ -159,7 +159,7 @@ const LoginPage = () => {
                 </form>
 
                 <p className="login-footer-text">
-                    Hudoyorxon Saroyi Admin Panel
+                    Street Viewer 360° Admin Panel
                 </p>
             </div>
         </div>

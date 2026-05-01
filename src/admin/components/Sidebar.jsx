@@ -11,13 +11,23 @@ const Sidebar = () => {
     const [modules, setModules] = useState([]);
     const [expandedModule, setExpandedModule] = useState(null);
 
-    useEffect(() => {
+    const fetchModules = () => {
         modulesAPI.getAll()
             .then(res => {
                 const data = res.data?.data || res.data || [];
                 setModules(data);
             })
             .catch(err => console.error("Sidebar modules yuklashda xato:", err));
+    };
+
+    useEffect(() => {
+        fetchModules();
+
+        // Custom event orqali ro'yxatni yangilashni eshitish
+        window.addEventListener('modulesUpdated', fetchModules);
+        return () => {
+            window.removeEventListener('modulesUpdated', fetchModules);
+        };
     }, []);
 
     useEffect(() => {
@@ -56,7 +66,7 @@ const Sidebar = () => {
                         <line x1="19" y1="12" x2="22" y2="12" />
                     </svg>
                 </div>
-                <span className="sidebar-logo-text">Hudoyorxon Saroyi</span>
+                <span className="sidebar-logo-text">Street Viewer</span>
             </div>
 
             {/* Navigation */}
